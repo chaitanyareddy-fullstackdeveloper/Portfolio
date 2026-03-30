@@ -1,0 +1,81 @@
+.contact-container {
+  display: grid;
+  grid-template-columns: 1fr 1.5fr;
+  gap: 3rem;
+}
+
+.max-w-2xl {
+  max-width: 42rem;
+}
+
+.mx-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.mb-16 {
+  margin-bottom: 4rem;
+}
+
+.p-8 {
+  padding: 2rem;
+}
+
+.block {
+  display: block;
+}
+
+.text-accent-primary {
+  color: var(--accent-primary);
+}
+
+.hover\:text-accent-primary:hover {
+  color: var(--accent-primary);
+}
+
+.info-icon {
+  background: rgba(255, 255, 255, 0.05);
+  transition: var(--transition-normal);
+}
+
+.info-item:hover .info-icon {
+  background: var(--accent-primary);
+  color: white;
+  transform: scale(1.1);
+}
+
+/* Form Styles */
+.form-input {
+  width: 100%;
+  padding: 1rem 1.25rem;
+  background: rgba(10, 10, 15, 0.5);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  color: var(--text-primary);
+  font-family: var(--font-sans);
+  font-size: 1rem;
+  transition: var(--transition-normal);
+  outline: none;
+}
+
+.form-input:focus {
+  border-color: var(--accent-primary);
+  box-shadow: 0 0 0 2px rgba(99, 102, 241, 0.2);
+  background: rgba(10, 10, 15, 0.8);
+}
+
+.form-input::placeholder {
+  color: rgba(160, 164, 184, 0.5);
+}
+
+.textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+
+@media (max-width: 992px) {
+  .contact-container {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+}
