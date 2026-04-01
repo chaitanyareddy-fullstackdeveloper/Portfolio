@@ -16,6 +16,11 @@ const About = () => {
       items: ['React', 'Redux', 'Tailwind CSS', 'Vanilla CSS']
     },
     {
+      category: 'Backend / Databases',
+      icon: <Wrench size={24} />,
+      items: ['Node.js','Express.js','MongoDB']
+    },
+    {
       category: 'Tools & Platforms',
       icon: <Wrench size={24} />,
       items: ['Git', 'GitHub', 'Netlify', 'Formspree', 'Framer']
@@ -78,11 +83,11 @@ const About = () => {
             <div className="skills-list flex flex-col gap-6">
               {skills.map((skillGroup, index) => (
                 <div key={index} className="skill-group glass-card p-6">
-                  <div className="flex items-center gap-3 mb-4">
+                  <div className="flex items-center gap- mb-4">
                     <span className="skill-icon">{skillGroup.icon}</span>
                     <h4 className="text-xl m-0">{skillGroup.category}</h4>
                   </div>
-                  <div className="skill-tags flex flex-wrap gap-3">
+                  <div className="skill-tags flex flex-wrap gap-4">
                     {skillGroup.items.map((item, i) => (
                       <span key={i} className="skill-tag">{item}</span>
                     ))}

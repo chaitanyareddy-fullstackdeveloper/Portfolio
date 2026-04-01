@@ -3,6 +3,7 @@
   grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
   gap: 2rem;
   min-height: 400px;
+  padding: 7px;
 }
 
 /* Filters */
@@ -10,14 +11,16 @@
   padding: 0.6rem 1.5rem;
   border-radius: 99px;
   background: rgba(255, 255, 255, 0.05);
-  border: 1px solid rgba(255, 255, 255, 0.1);
+  border: 2px solid rgba(255, 255, 255, 0.1);
   color: var(--text-secondary);
   font-weight: 500;
   transition: all var(--transition-normal);
+  margin: 2px;
 }
 
 .filter-btn:hover {
   background: rgba(255, 255, 255, 0.1);
+  border: 1px;
   color: var(--text-primary);
 }
 
@@ -32,7 +35,7 @@
 .project-card {
   min-height: 400px;
   transition: all var(--transition-normal);
-  border: 1px solid rgba(255, 255, 255, 0.05);
+  border: 2px solid rgba(255, 255, 255, 0.05);
   background: var(--bg-card);
 }
 
